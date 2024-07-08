@@ -1,6 +1,6 @@
+import { createSupabaseBrowserClient } from "@/lib/client/supabase";
 import { Auth } from "@supabase/auth-ui-react";
 import { ThemeSupa } from "@supabase/auth-ui-shared";
-import { createSupabaseBrowserClient } from "@/lib/supabase";
 
 const AuthUI = () => {
   const supabase = createSupabaseBrowserClient();
