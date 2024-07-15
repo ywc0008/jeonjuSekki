@@ -7,7 +7,7 @@ import { getUser } from "@/actions/auth/user.action";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "jeonjuSekki",
+  title: "전주세끼 - 전주의 맛집을 소개합니다.",
   description: "전주세끼에 오신 것을 환영합니다.",
 };
 
@@ -21,7 +21,7 @@ export default async function RootLayout({
   return (
     <html lang="ko">
       <body className={inter.className}>
-        <Header user={user}>{children}</Header>
+        <Header>{children}</Header>
       </body>
     </html>
   );
