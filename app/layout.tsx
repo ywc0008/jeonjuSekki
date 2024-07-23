@@ -16,8 +16,6 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const user = await getUser({ serverComponent: true });
-
   return (
     <html lang="ko">
       <body className={inter.className}>
